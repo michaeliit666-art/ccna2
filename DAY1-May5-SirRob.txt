@@ -431,8 +431,14 @@ ip nat inside
 ip nat inside source list 1 interface gi 0/0/1 Overload
 NTP : NETWORK TIME  PROTOCOL
 DCHP :DYNAMIC
-SSH : SECURE SHELL
-
+SSH : SECURE SHELL cia : confidentility intergrity availability
+CoreBABA:
+config t
+username admin privilege 15 secret pass
+ip domain-name rivanit.com
+crypto key generate rsa
+!i type mo 1024 wag 512 na default
+ip ssh version 2
 
  !!!STATIC ROUTING FOR MININUM WAGERS: 645php/day
  !!! EDGE route NOT dikit to ClassMate:
@@ -665,6 +671,7 @@ exit
           
 sip-ua
 sip-server ipv4:192.168.k.1
+
 
 
 
