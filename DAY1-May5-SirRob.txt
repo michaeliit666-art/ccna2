@@ -419,6 +419,20 @@ router-id 10.32.100.8
 network 10.32.100.0  0.0.0.255  area 0
 end
 
+EXAM READY DAY 1: NAT, NTP, DHCP, and SSH
+NAT : NETWORK ADDRESS INSTALLATION :BIGAY INTERNET SA MUNDO SI CISCO
+config t 
+ip route 0.0.0.0 0.0.0.0 200.0.0.1
+access-list 1 permit any
+int gigabit 0/0/1
+ip nat outside
+int gigabit 0/0/0
+ip nat inside
+ip nat inside source list 1 interface gi 0/0/1 Overload
+NTP : NETWORK TIME  PROTOCOL
+DCHP :DYNAMIC
+SSH : SECURE SHELL
+
 
  !!!STATIC ROUTING FOR MININUM WAGERS: 645php/day
  !!! EDGE route NOT dikit to ClassMate:
@@ -651,5 +665,6 @@ exit
           
 sip-ua
 sip-server ipv4:192.168.k.1
+
 
 
