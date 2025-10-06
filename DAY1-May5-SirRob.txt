@@ -172,7 +172,7 @@ config t
 ip routing
 ip dhcp pool CAMERA6
 host 10.32.50.6 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.070b.471d
 ip dhcp pool CAMERA8
 host 10.32.50.8 255.255.255.0
 client-identifier abcd.1234.cafb
@@ -246,18 +246,18 @@ ephone-dn 7
 ephone-dn 8
   number 3288
  ephone-dn 9
-   number 3299
+   number 07
 ephone-dn 10
- number 3298
+ number 30
 Ephone 1
-  Mac-address cafe.face.baba
+  Mac-address 203A.0783.6B15
   type 8945
-  button 1:8 2:7 3:6 4:5
+  button 1:8 2:7 3:6 4:9
   restart
 Ephone 2
-  Mac-address fafa.caca.baba
+  Mac-address DCA5.F43F.3B7F
   type 8945
-  button 1:4 2:3 3:2 4:1
+  button 1:4 2:3 3:2 4:10
   restart  
 end
 
@@ -305,9 +305,9 @@ dial-peer voice 31 Voip
  session target ipv4:10.31.100.8
  codec g711ULAW
 dial-peer voice 32 Voip
- destination-pattern 32..
- session target ipv4:10.32.100.8
- codec g711ULAW
+ !destination-pattern 32..
+ !session target ipv4:10.32.100.8
+ !codec g711ULAW
 dial-peer voice 41 Voip
  destination-pattern 41..
  session target ipv4:10.41.100.8
@@ -347,6 +347,14 @@ dial-peer voice 81 Voip
 dial-peer voice 82 Voip
  destination-pattern 82..
  session target ipv4:10.82.100.8
+ codec g711ULAW
+dial-peer voice 91 Voip
+ destination-pattern 91..
+ session target ipv4:10.91.100.8
+ codec g711ULAW
+dial-peer voice 92 Voip
+ destination-pattern 92..
+ session target ipv4:10.22.100.8
  codec g711ULAW
 
 TASK3***TASK3***TASK3***
@@ -643,4 +651,5 @@ exit
           
 sip-ua
 sip-server ipv4:192.168.k.1
+
 
