@@ -264,7 +264,7 @@ indicator no.2: if you plug a device=30s
 
 indicator no.3: Kislap every 1/2 seconds
 
-TASK6: HOW TO GET FIRED IMMEDIATELY!
+TASK6: HOW TO GET FIRED IMMEDIATELY!  uni cast: multicast:00-01-5e xx-xx-xx-xx broadcast ff-ff-ff--ff-ff-ff
 SIRAIN NG TODO SI @taas at @baba:
 config t
 NO spanning-tree vlan 1-999
@@ -300,6 +300,7 @@ Int Range fa0/10-12
  do sh int trunk
 Dot1q = Qupid,mave switches love each other:
       IEEE standard where SW will from Layer 2 trunks
+
 
 TASK9: SPANNING-TREE PROTOCOL: 802.1D: protect switches Slowly.
 blk-lis-lrn-fwd = 30 seconds.
@@ -728,6 +729,7 @@ how to get certified:
 2. Lab: NAT and DHCP:
 
 3. ask sa CHAT: "latest reivewer"
+
 
 
 
